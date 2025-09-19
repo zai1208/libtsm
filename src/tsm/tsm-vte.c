@@ -415,6 +415,8 @@ static uint8_t (*get_palette(struct tsm_vte *vte))[3]
 		return color_palette_base16_dark;
 	if (!strcmp(vte->palette_name, "base16-light"))
 		return color_palette_base16_light;
+	if (!strcmp(vte->palette_name, "one-dark"))
+		return color_palette_one_dark;
 	if (!strcmp(vte->palette_name, "vga"))
 		return color_palette_vga;
 	if (!strcmp(vte->palette_name, "legacy"))
